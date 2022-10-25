@@ -8,7 +8,7 @@ class Electronic(models.Model):
     description = models.TextField(verbose_name='Описание')
 
     def __str__(self):
-        return self.h_mark
+        return self.name
 
     class Meta:
         verbose_name = 'Электроника'
