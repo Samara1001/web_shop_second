@@ -1,5 +1,6 @@
 from django.db import models
 
+<<<<<<< HEAD
 
 class Electronic(models.Model):
     name = models.CharField(max_length=40, verbose_name='Имя')
@@ -13,3 +14,5 @@ class Electronic(models.Model):
     class Meta:
         verbose_name = 'Электроника'
         verbose_name_plural = 'Список электроника'
+=======
+>>>>>>> a356e68743fda4aa883ac42072278af712c36a09
