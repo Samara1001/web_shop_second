@@ -6,7 +6,7 @@ from electronic import apiView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('electronic/', admin.site.urls),
-    path('api-auth/', include('rest_framework.urls', namespace='electronic'))
+    path('electronic/', include('electronic.urls')),
+
 
 ]
