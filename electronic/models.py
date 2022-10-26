@@ -6,7 +6,7 @@ class Electronic(models.Model):
     brand = models.CharField(max_length=30, verbose_name='Марка')
     price = models.FloatField(verbose_name='Цена')
     description = models.TextField(verbose_name='Описание')
-    # cat = models.ForeignKey('Category', on_delete=models.PROTECT, null=True)
+    cat = models.ForeignKey('Category', on_delete=models.PROTECT, null=True)
 
     def __str__(self):
         return self.name
