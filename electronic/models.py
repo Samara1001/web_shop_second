@@ -1,6 +1,6 @@
 from django.db import models
 
-# <<<<<<< HEAD
+<<<<<<< HEAD
 
 class Electronic(models.Model):
     name = models.CharField(max_length=40, verbose_name='Имя')
@@ -15,6 +15,6 @@ class Electronic(models.Model):
         verbose_name = 'Электроника'
         verbose_name_plural = 'Список электроника'
 
-# =======
+=======
 # Create your models here.
-# >>>>>>> 80edc369fe4b1de11ab50780fc8b5bd508116da4
+>>>>>>> 80edc369fe4b1de11ab50780fc8b5bd508116da4

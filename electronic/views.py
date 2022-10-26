@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Electronic
+from .models import Electronic, Category
 
 
 def index(requests):
@@ -11,4 +11,8 @@ def main(request):
 
 
 def electronic(request):
+    return render(request)
+
+
+def category(request):
     return render(request)
