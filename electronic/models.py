@@ -17,7 +17,7 @@ class Electronic(models.Model):
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=40, verbose_name='Имя')
+    name = models.CharField(max_length=40, verbose_name='Название')
 
     def __str__(self):
         return self.name
