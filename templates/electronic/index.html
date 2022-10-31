@@ -1,0 +1,21 @@
+{% extends "electronic/layout.html" %}
+{% block content %}
+
+
+<div class="container text-center">
+  <h3>What We Do</h3><br>
+  <div class="row">
+    {% for el in data %}
+    <div class="col-sm-4">
+      <img src="https://www.e-spincorp.com/wp-content/uploads/2018/11/Electronic-e1542941776154.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p>{{ el.name }}</p>
+      <p>{{ el.brand }}</p>
+      <p>{{ el.price }}</p>
+      <p>{{ el.description }}</p>
+      <p>{{ el.cat }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div><br>
+
+{% endblock %}
