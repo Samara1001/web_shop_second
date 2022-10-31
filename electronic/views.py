@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import DetailView
+from django.views.generic import DetailView, UpdateView
 
 
 from django.shortcuts import render, redirect
@@ -46,5 +46,12 @@ def create(request):
         'error': error
     }
     return render(request, 'electronic/create_page.html', data)
+
+
+class ElectronicUpdateView(UpdateView):
+    model = Electronic
+    template_name = 'electronic/update.html'
+
+    form_class = ElectronicForm
 
 
