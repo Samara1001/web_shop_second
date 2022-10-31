@@ -1,0 +1,16 @@
+{% extends "electronic/layout.html" %}
+{% block content %}
+    <div class="features">
+        <h1>{{ electronic.name }}</h1>
+        <p>{{ electronic.brand }}</p>
+        <p>{{ electronic.img }}</p>
+        <p>{{ electronic.price }}</p>
+        <p>{{ electronic.description }}</p>
+        <p>{{ electronic.cat }}</p>
+        <a href="{% url 'details' electronic.id %}" class="btn btn-danger">Подробнее</a>
+
+
+    </div>
+
+
+{% endblock %}

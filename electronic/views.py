@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from django.views.generic import DetailView
+
 from .models import Electronic, Category
 
 
@@ -18,3 +20,8 @@ def electronic(request):
 def category(request):
     return render(request)
 
+
+class ElectronicDetailView(DetailView):
+    model = Electronic
+    template_name = 'electronic/details.html'
+    context_object_name = 'electronic'

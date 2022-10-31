@@ -14,7 +14,8 @@ router.register(r'users', apiView.UserViewSet)
 urlpatterns = [
     path('', views.index, name='home'),
     path('main', views.main, name='about'),
-    path('main', views.main, name='about'),
+    path('<int:pk>/', views.ElectronicDetailView.as_view(), name='details'),
+
     path('api', include(router.urls))
 
 
