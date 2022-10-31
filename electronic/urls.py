@@ -15,6 +15,7 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('main', views.main, name='about'),
     path('<int:pk>/', views.ElectronicDetailView.as_view(), name='details'),
+    path('create_page', views.create, name='create'),
 
     path('api', include(router.urls))
 
