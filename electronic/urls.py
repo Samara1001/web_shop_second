@@ -7,6 +7,8 @@ from . import views
 
 router = routers.DefaultRouter()
 router.register(r'electronic', apiView.ElectronicViewSet)
+router.register(r'category', apiView.CategoryElectronicViewSet)
+router.register(r'users', apiView.UserViewSet)
 
 
 urlpatterns = [
