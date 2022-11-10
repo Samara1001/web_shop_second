@@ -17,6 +17,7 @@ urlpatterns = [
     path('<int:pk>/', views.ElectronicDetailView.as_view(), name='details'),
     path('create_page', views.create, name='create'),
     path('<int:pk>/update', views.ElectronicUpdateView.as_view(), name='update'),
+    path('<int:pk>/delete', views.ElectronicDeleteView.as_view(), name='delete'),
     path('api', include(router.urls))
 
 

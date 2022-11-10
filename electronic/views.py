@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import DetailView, UpdateView
+from django.views.generic import DetailView, UpdateView, DeleteView
 
 
 from django.shortcuts import render, redirect
@@ -53,5 +53,11 @@ class ElectronicUpdateView(UpdateView):
     template_name = 'electronic/update.html'
 
     form_class = ElectronicForm
+
+
+class ElectronicDeleteView(DeleteView):
+    model = Electronic
+    success_url = '/electronic/'
+    template_name = 'electronic/delete.html'
 
 
